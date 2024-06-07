@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    /* Light blue background */
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 1000px;
+    /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0ffff, #87ceeb);
+    /* Gradient background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-container>input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="date"]:focus {
+    border-color: #ff5722;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+label>input {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.controls>label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #ff5722;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+.task-item:hover {
+    transform: scale(1.02);
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-item.failed span {
+    color: #dc3545;
+}
+
+.task-item span {
+    cursor: pointer;
+    flex: 1;
+    text-align: left;
+}
+
+.task-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.task-item button:hover {
+    background: #c82333;
+}
+
+.progress-bar-container {
+    height: 24px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #4caf50;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    transition: width 0.4s ease;
+}

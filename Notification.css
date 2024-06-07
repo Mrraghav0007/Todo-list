@@ -1,0 +1,26 @@
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.notification.success {
+    background-color: #28a745;
+    /* Green background for success */
+}
+
+.notification.error {
+    background-color: #dc3545;
+    /* Red background for error */
+}
+
+.notification.show {
+    opacity: 1;
+}
